@@ -1,0 +1,52 @@
+{
+  "title": "MRoad",
+  "config": {
+    "step": {
+      "user": {
+        "title": "MRoad",
+        "description": "Enter your MRoad account credentials.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Sign in again",
+        "description": "Enter current credentials for the same account.",
+        "data": {
+          "username": "Username",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot retrieve account data. Check your connection and try again.",
+      "invalid_auth": "Authentication rejected. Check your username and password.",
+      "wrong_account": "Use the username of the existing account."
+    },
+    "abort": {
+      "already_configured": "Account already configured.",
+      "reauth_successful": "Authentication updated."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Data updates",
+        "data": {
+          "scan_interval_minutes": "Update interval (minutes)"
+        }
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "balance": {
+        "name": "Balance"
+      },
+      "status": {
+        "name": "Account status"
+      }
+    }
+  }
+}
